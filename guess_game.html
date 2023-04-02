@@ -1,0 +1,40 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="guess_game.css">
+        <script src="guess_game.js"></script>
+        <title>Guess Game</title>
+    </head>
+
+    <body>
+        <h1>Guess Game</h1>
+        <div id="game_selection">
+            <p id="description">Choose a game:</p>
+            <button onclick='hide(game_selection); start_player_guess_game()' id="start_game1" class="buttons">Game
+                1</button>
+            <button onclick='hide(game_selection); start_computer_guess_game()' id="start_game2" class="buttons">Game
+                2</button>
+        </div>
+
+        <div id="game1">
+            <input type="text" id="player_input">
+            <button id="try_button" class="buttons" >Guess</button>
+            <div id="message1" class="message"></div>
+            <button onclick='new_game()' id="restart-button1" class="buttons">Restart</button>
+        </div>
+
+        <div id="game2">
+            <div id="message2" class="message"></div>
+            <button id="smaller-button" class="buttons" >smaller</button>
+            <button id="bigger-button" class="buttons" >bigger</button>
+            <button id="found-button" class="buttons" >found</button>
+            <button onclick='new_game()' id="restart-button2" class="buttons">Restart</button>
+        </div>
+        
+        <div class="credits">
+            Created by Candy Papin
+        </div>
+
+    </body>
+
+</html>
